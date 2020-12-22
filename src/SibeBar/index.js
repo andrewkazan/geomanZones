@@ -15,6 +15,7 @@ const SideBar = ({
   handleSelectZone,
   toggleDragZoneMode,
   handleDeleteZone,
+  isDragZoneMode,
 }) => {
   const [isClickDragButton, setIsClickDragButton] = useState(false);
 
@@ -42,8 +43,8 @@ const SideBar = ({
 
     removeDrawnZones();
     setIsError({});
-    isClickDragButton && toggleDragZoneMode();
     isClickDragButton && setIsClickDragButton(!isClickDragButton);
+    isDragZoneMode.current && toggleDragZoneMode();
   };
 
   const clickSaveZone = () => {
@@ -53,7 +54,6 @@ const SideBar = ({
     }
 
     handleSaveZone();
-    isClickDragButton && toggleDragZoneMode();
     isClickDragButton && setIsClickDragButton(!isClickDragButton);
   };
 

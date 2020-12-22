@@ -117,7 +117,7 @@ function App() {
         setZones([...newArr]);
       }
 
-      isDragZoneMode.current = !isDragZoneMode.current;
+      toggleDragZoneMode();
     }
 
     removeDrawnZones();
