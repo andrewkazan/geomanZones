@@ -1,0 +1,17 @@
+.errorContainer {
+  width: 400px;
+  height: auto;
+  padding: 15px;
+}
+
+.closeLine {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.crossStyle {
+}
+
+.crossStyle:hover {
+  cursor: pointer;
+}
